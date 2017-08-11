@@ -1,0 +1,7 @@
+{
+  "TITLE": "Call Center",
+  "URL": "/airlines/:airline_code/callcenter",
+  "METHOD": "GET",
+  "NAMESPACE": "get airline call center",
+  "SCRIPT": "./script/Airlines.CallCenter.js"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "TITLE": "Get Airline",
+    "URL": "/airlines/:airline_code",
+    "METHOD": "get",
+    "NAMESPACE": "Get Airline details",
+    "SCRIPT": "./script/Airlines.GetAirline.js"
+  },
+  {
+    "TITLE": "Get All Airlines",
+    "URL": "/airlines",
+    "METHOD": "get",
+    "NAMESPACE": "Get All Airlines",
+    "SCRIPT": "./script/Airlines.GetAllAirlines.js"
+  }
+]

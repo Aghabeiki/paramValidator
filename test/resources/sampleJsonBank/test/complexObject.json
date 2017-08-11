@@ -1,0 +1,27 @@
+{
+  "Airlines1": [
+    {
+      "TITLE": "Offices",
+      "URL": "/airlines/:airline_code/office",
+      "METHOD": "GET",
+      "NAMESPACE": "Get Airlines Office Details",
+      "SCRIPT": "./script/Airlines.Offices.js"
+    },
+    {
+      "TITLE": "Representative2",
+      "URL": "/airlines/:airline_code/representative2",
+      "METHOD": "GET",
+      "NAMESPACE": "Get Airline representative2 details",
+      "SCRIPT": "./script/Airlines.Representative.js"
+    }
+  ],
+  "Airlines2": [
+    {
+      "TITLE": "Representative",
+      "URL": "/airlines/:airline_code/representative",
+      "METHOD": "GET",
+      "NAMESPACE": "Get Airline representative details",
+      "SCRIPT": "./script/Airlines.Representative.js"
+    }
+  ]
+}

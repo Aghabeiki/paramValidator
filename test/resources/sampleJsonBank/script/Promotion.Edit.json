@@ -1,0 +1,88 @@
+{
+  "URL": "/promotion/update",
+  "METHOD": "put",
+  "NAMESPACE": "update a promotion",
+  "BODY": {
+    "promotion_id": {
+      "type": "number"
+    },
+    "status": {
+      "type": "number",
+      "min": 1,
+      "max": 4,
+      "required": false
+    },
+    "date_from": {
+      "type": "date",
+      "required": false,
+      "regex64": "XihbMS0yXSkoWzAtOV0pKFswLTldKShbMC05XSkoLSkoMFsxLTldfDFbMC0yXSkoLSkoMFsxLTldfDFbMC05XXwyWzAtOV18M1swLTFdKShUKSgwWzAtOV18MVswLTldfDJbMC0zXSkoOikoMFswLTldfDFbMC05XXwyWzAtOV18M1swLTldfDRbMC05XXw1WzAtOV0pKFwrfFwtKShcZFxkXDpcZFxkKQ==",
+      "compareWithFiled": [
+        "<:date_to"
+      ]
+    },
+    "date_to": {
+      "type": "date",
+      "required": false,
+      "regex64": "XihbMS0yXSkoWzAtOV0pKFswLTldKShbMC05XSkoLSkoMFsxLTldfDFbMC0yXSkoLSkoMFsxLTldfDFbMC05XXwyWzAtOV18M1swLTFdKShUKSgwWzAtOV18MVswLTldfDJbMC0zXSkoOikoMFswLTldfDFbMC05XXwyWzAtOV18M1swLTldfDRbMC05XXw1WzAtOV0pKFwrfFwtKShcZFxkXDpcZFxkKQ==",
+      "compareWithFiled": [
+        ">:date_from"
+      ]
+    },
+    "position": {
+      "type": "number",
+      "required": false
+    },
+    "category": {
+      "type": "string",
+      "required": false
+    },
+    "details": {
+      "type": "array",
+      "required": false,
+      "rows": {
+        "type": "object",
+        "body": {
+          "detail_id": {
+            "type": "number"
+          },
+          "language": {
+            "type": "string",
+            "required": false,
+            "regex64": "XlthLXpBLVpdezIsM30oWy1cL11bYS16QS1aXXsyLDN9KT8k",
+            "length": 5
+          },
+          "title": {
+            "type": "string",
+            "required": false,
+            "maxLength": 1024
+          },
+          "subtitle": {
+            "type": "string",
+            "required": false,
+            "maxLength": 1024
+          },
+          "description": {
+            "type": "string",
+            "required": false
+          },
+          "banner_main": {
+            "type": "string",
+            "required": false
+          },
+          "banner_details": {
+            "type": "string",
+            "required": false
+          },
+          "CTA": {
+            "type": "number",
+            "required": false
+          },
+          "channel": {
+            "type": "string",
+            "required": false
+          }
+        }
+      }
+    }
+  }
+}
