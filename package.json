@@ -1,0 +1,30 @@
+{
+  "name": "param-validator",
+  "version": "1.1.5",
+  "description": "A Param Validator in Middleware for Sailsjs",
+  "main": "ParamValidator.js",
+  "keywords": [
+    "Param Validator",
+    "Sailsjs",
+    "middleware",
+    "Automatic Validations"
+  ],
+  "directories": {
+    "lib": "the project library ",
+    "test": "unit test files"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "A.Aghabeiki",
+  "license": "MIT",
+  "dependencies": {
+    "google-libphonenumber": "^3.0.0",
+    "lodash": "^4.17.4",
+    "url-pattern": "^1.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.0",
+    "should": "^11.2.1"
+  }
+}
