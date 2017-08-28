@@ -1,6 +1,6 @@
 {
   "name": "param-validator",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "A Param Validator in Middleware for Sailsjs",
   "main": "ParamValidator.js",
   "keywords": [
@@ -14,7 +14,7 @@
     "test": "unit test files"
   },
   "scripts": {
-    "test": "mocha"
+	"test": "nyc --reporter=text mocha"
   },
   "author": "A.Aghabeiki",
   "license": "MIT",
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
     "should": "^11.2.1"
   }
 }

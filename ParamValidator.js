@@ -15,6 +15,9 @@ let Handler = null;
 
 class ParamValidator {
     constructor(config, logger, routes, environment) {
+        if (config == undefined) {
+            throw new PVError("arguments missed");
+        }
         if (config.projectBaseDIR === undefined || !FS.existsSync(config.projectBaseDIR)) {
             throw new PVError('base project not set ')
         }
