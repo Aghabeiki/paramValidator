@@ -138,5 +138,6 @@ class ParamValidator {
     }
 
 }
-ParamValidator.prototype.validator = require('./lib/MiddlewareInterface')
+Object.defineProperty(ParamValidator.prototype,'validator',require('./lib/MiddlewareInterface'))
 module.exports = ParamValidator;
+module.exports.PVError=require('./lib/Error/PVError')

@@ -3,9 +3,9 @@ describe('Helper', function () {
     describe('#JSON Bank Loader', function () {
         it('should be true when load the test', function (done) {
 
-            const configLoader = require('../lib/Helper/ConfigBankLoader');
+            const configLoader = require('../../lib/Helper/ConfigBankLoader');
             const path = require('path');
-            const config = require('./resources/config')
+            const config = require('../resources/config')
             const res = configLoader(path.resolve(config.validatorBaseRepo, 'test'));
             res.should.be.eql({
                 '/airlines/:airline_code/callcenter': {
@@ -68,9 +68,9 @@ describe('Helper', function () {
         });
         it('should be true when load the test1', function (done) {
 
-            const configLoader = require('../lib/Helper/ConfigBankLoader');
+            const configLoader = require('../../lib/Helper/ConfigBankLoader');
             const path = require('path');
-            const config = require('./resources/config')
+            const config = require('../resources/config')
             const res = configLoader(path.resolve(config.validatorBaseRepo, 'test1'));
             res.should.be.eql({
                 '/companions': {
@@ -109,9 +109,9 @@ describe('Helper', function () {
         });
         it('should be true when load the test2', function (done) {
 
-            const configLoader = require('../lib/Helper/ConfigBankLoader');
+            const configLoader = require('../../lib/Helper/ConfigBankLoader');
             const path = require('path');
-            const config = require('./resources/config')
+            const config = require('../resources/config')
             const res = configLoader(path.resolve(config.validatorBaseRepo, 'test2'));
             res.should.be.eql({
                 '/companions': {
@@ -150,9 +150,9 @@ describe('Helper', function () {
         });
         it('should be throw an error when load the simple', function (done) {
 
-            const configLoader = require('../lib/Helper/ConfigBankLoader');
+            const configLoader = require('../../lib/Helper/ConfigBankLoader');
             const path = require('path');
-            const config = require('./resources/config')
+            const config = require('../resources/config')
             try {
                 const res = configLoader(path.resolve(config.validatorBaseRepo, 'simple'));
             }

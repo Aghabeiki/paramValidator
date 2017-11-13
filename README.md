@@ -1,6 +1,6 @@
 # Param-Validator
 
-A Param Validator in Middleware for Sailsjs
+A Param Validator in Middleware for Sailsjs/Express.js
 
 **note**: \
 ***this project is under heavy developments.***

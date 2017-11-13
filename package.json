@@ -14,7 +14,8 @@
     "test": "unit test files"
   },
   "scripts": {
-	"test": "nyc --reporter=text mocha"
+    "test":"mocha test/unit/*.test.js",
+	"coverage": "nyc --reporter=text mocha test"
   },
   "author": "A.Aghabeiki",
   "license": "MIT",
