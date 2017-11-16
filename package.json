@@ -1,8 +1,8 @@
 {
   "name": "param-validator",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "A Param Validator in Middleware for Sailsjs",
-  "main": "ParamValidator.js",
+  "main": "index.js",
   "keywords": [
     "Param Validator",
     "Sailsjs",

@@ -3,7 +3,7 @@
  */
 let should = require('should');
 const PVError = require('../../lib/Error/PVError')
-const ParamValidator = require('../../ParamValidator');
+const ParamValidator = require('../../lib/paramValidator/index');
 const config = {
     projectBaseDIR: __dirname,
     validatorBaseRepo: __dirname,
